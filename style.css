@@ -1,0 +1,36 @@
+:root{--az:#0b4f8a;--az2:#083a66;--bg:#f3f6fa;--bd:#dbe3ec;--tx:#1c2733;--mu:#6b7a8a;--ok:#1e8e4e;--am:#c98a00;--vm:#c62f2f}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;background:var(--bg);color:var(--tx);font-size:14px}
+header{background:var(--az);color:#fff;display:flex;align-items:center;gap:12px;padding:12px 20px;position:sticky;top:0;z-index:5}
+header h1{font-size:17px;margin:0;font-weight:600;flex:1}header small{opacity:.8}
+nav{background:#fff;border-bottom:1px solid var(--bd);display:flex;gap:4px;padding:6px 16px;overflow-x:auto}
+nav a,nav button{border:0;background:none;padding:8px 12px;border-radius:8px;color:var(--az2);font:inherit;cursor:pointer;text-decoration:none;white-space:nowrap}
+nav a:hover,nav button:hover,nav .on{background:#e6eef7}
+main{max-width:1280px;margin:auto;padding:18px}
+.aviso{background:#fff7dd;border:1px solid #f0d78a;border-radius:10px;padding:10px 14px;margin-bottom:14px;color:#6b5200}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:16px}
+.card{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:14px;box-shadow:0 1px 4px #0b4f8a14}
+.card b{display:block;font-size:26px;color:var(--az)}.card span{color:var(--mu);font-size:12px}
+.card.ok b{color:var(--ok)}.card.am b{color:var(--am)}.card.vm b{color:var(--vm)}
+.graf{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin-bottom:16px}
+.graf .card{height:280px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+input,select,textarea{font:inherit;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:#fff;max-width:100%}
+input:focus,select:focus,textarea:focus,button:focus-visible{outline:2px solid var(--az);outline-offset:1px}
+#busca{flex:1;min-width:240px}
+.btn{background:var(--az);color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer;font:inherit;text-decoration:none;display:inline-block}
+.btn:hover{background:var(--az2)}.btn.sec{background:#fff;color:var(--az);border:1px solid var(--az)}.btn.vm{background:var(--vm)}.btn.sm{padding:4px 9px;font-size:12px}
+.tw{overflow-x:auto;background:#fff;border:1px solid var(--bd);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:900px}th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--bd);vertical-align:top}
+th{background:#eef3f9;color:var(--az2);font-weight:600;position:sticky;top:0}
+.b{display:inline-block;padding:2px 7px;border-radius:20px;font-size:11px;margin:1px;color:#fff;font-weight:600}
+.b.pgr{background:#0b4f8a}.b.ltcat{background:#0e7c86}.b.pcmso{background:#5b4bb5}.b.formsPsico{background:#a63d8a}.b.aep{background:#c26a12}.b.aet{background:#8a6d00}.b.li{background:#3f7d20}.b.lp{background:#557}.b.medicoes{background:#b23}
+.st{padding:2px 9px;border-radius:20px;font-size:12px;font-weight:600}
+.st.OK{background:#dff3e7;color:var(--ok)}.st.PENDENTE{background:#fff1cc;color:var(--am)}.st.ATRASADO{background:#fbe0e0;color:var(--vm)}.st.EM-ANDAMENTO{background:#dcebfa;color:var(--az)}.st.x{background:#e8ecf0;color:var(--mu)}
+dialog{border:0;border-radius:14px;padding:0;width:min(720px,94vw);box-shadow:0 10px 40px #0004}dialog::backdrop{background:#0006}
+dialog form,dialog .in{padding:18px}dialog h2{margin:0 0 12px;color:var(--az2)}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}.g label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--mu)}.g .w{grid-column:1/-1}
+h3{color:var(--az2)}.mu{color:var(--mu)}.hide{display:none}
+#toast{position:fixed;bottom:16px;right:16px;background:#1c2733;color:#fff;padding:10px 16px;border-radius:10px;display:none;z-index:20}
+.drop{border:2px dashed var(--az);border-radius:14px;background:#fff;padding:40px;text-align:center;cursor:pointer;color:var(--az2)}.drop.over{background:#e6eef7}
+.msg{padding:10px 14px;border-radius:10px;margin:12px 0}.msg.ok{background:#dff3e7}.msg.er{background:#fbe0e0}.msg.wa{background:#fff1cc}
+@media(max-width:640px){main{padding:10px}header h1{font-size:15px}}

@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Controle de Documentos — Real Medicina</title><link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script></head><body>
+<header><h1>CONTROLE DE DOCUMENTOS — REAL MEDICINA</h1><small>Medicina e Segurança do Trabalho</small></header>
+<nav>
+<a href="#" data-v="home" class="on">Dashboard</a><a href="#" data-v="home" data-go="tabela">Documentos</a>
+<button id="novo">Novo Registro</button><a href="importador.html">Importar Planilha</a>
+<button id="expjs">Exportar dados.js</button><a href="#" data-v="cfg">Backup</a><a href="#" data-v="pend">Pendências</a><a href="#" data-v="rel">Relatórios</a><a href="#" data-v="cfg">Configurações</a></nav>
+<main>
+<div id="aviso" class="aviso hide"></div>
+<section id="v-home">
+<div class="cards" id="cards"></div>
+<div class="graf"><div class="card"><canvas id="g1"></canvas></div><div class="card"><canvas id="g2"></canvas></div><div class="card"><canvas id="g3"></canvas></div></div>
+<div id="tabela"><div class="bar">
+<input id="busca" type="search" placeholder="Pesquisar empresa, CNPJ/CPF ou responsável">
+<select id="fSt"><option value="">Status: todos</option><option>OK</option><option>PENDENTE</option><option>EM ANDAMENTO</option><option>ATRASADO</option></select>
+<select id="fResp"></select><select id="fDoc"></select>
+<select id="fTipo"><option value="dataSolicitacao">Período: solicitação</option><option value="dataEntrega">Período: entrega</option></select>
+<input type="date" id="fDe" title="De"><input type="date" id="fAte" title="Até"><button class="btn sec" id="limpar">Limpar</button></div>
+<div class="tw"><table><thead><tr><th>Empresa</th><th>CNPJ/CPF</th><th>Solicitação</th><th>Documentos</th><th>Visita</th><th>Entrega</th><th>Status</th><th>Responsável</th><th>Ações</th></tr></thead><tbody id="tb"></tbody></table></div></div>
+</section>
+<section id="v-pend" class="hide"><h3>Pendências</h3><p class="mu">Sem data de entrega, status diferente de OK ou atrasados.</p><div class="tw"><table><thead><tr><th>Empresa</th><th>CNPJ/CPF</th><th>Solicitação</th><th>Documentos</th><th>Visita</th><th>Entrega</th><th>Status</th><th>Responsável</th><th>Ações</th></tr></thead><tbody id="tbp"></tbody></table></div></section>
+<section id="v-rel" class="hide"><h3>Relatórios</h3><div class="bar"><select id="relT"><option value="empresa">Por empresa</option><option value="responsavel">Por responsável</option><option value="documento">Por documento</option><option value="status">Por status</option><option value="pendencias">Pendências</option></select><button class="btn" id="relCsv">Exportar CSV</button></div><div class="tw"><table><thead id="relH"></thead><tbody id="relB"></tbody></table></div></section>
+<section id="v-cfg" class="hide"><h3>Backup e configurações</h3>
+<div class="bar"><button class="btn" id="bJson">Exportar JSON</button><button class="btn" id="bCsv">Exportar CSV</button><button class="btn" id="bJs">Baixar dados.js</button><button class="btn sec" id="bDesc">Descartar alterações locais</button></div>
+<p class="mu">Este sistema roda no GitHub Pages, que é estático: alterações feitas no navegador ficam salvas só neste navegador. Para publicar, baixe o <b>dados.js</b> e substitua o arquivo no repositório (commit).</p></section>
+</main>
+<dialog id="dlgF"><form id="form"><h2 id="fT">Novo registro</h2><div class="g" id="fG"></div>
+<div class="bar" style="margin:14px 0 0;justify-content:flex-end"><button type="button" class="btn sec" id="fC">Cancelar</button><button class="btn">Salvar</button></div></form></dialog>
+<dialog id="dlgV"><div class="in" id="vB"></div></dialog><div id="toast"></div>
+<script src="dados.js"></script><script src="app.js"></script></body></html>

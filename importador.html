@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Importar planilha — Real Medicina</title><link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script></head><body>
+<header><h1>IMPORTAR PLANILHA</h1><a class="btn sec" href="index.html">← Voltar ao sistema</a></header>
+<main>
+<p class="mu">A planilha é lida e convertida aqui no seu navegador. Nenhum dado é enviado para servidores.</p>
+<label class="drop" id="drop" style="display:block"><b>ARRASTE SUA PLANILHA AQUI</b><br>ou clique para selecionar<br><small>Formatos: .xlsx / .xls / .csv</small>
+<input type="file" id="arq" accept=".xlsx,.xls,.csv" class="hide"></label>
+<div class="bar" style="margin-top:12px"><button class="btn" onclick="document.getElementById('arq').click()">Selecionar arquivo</button>
+<button class="btn sec" onclick="document.getElementById('arqJs').click()">Carregar dados.js</button><input type="file" id="arqJs" accept=".js" class="hide"></div>
+<div id="msg"></div>
+<div id="prev" class="hide"><h3 id="info"></h3><div id="dup"></div>
+<div class="tw" style="max-height:420px"><table><thead id="ph"></thead><tbody id="pb"></tbody></table></div>
+<div class="bar" style="margin-top:12px"><button class="btn" id="ok">CONFIRMAR IMPORTAÇÃO</button><button class="btn sec" id="cancel">CANCELAR</button></div></div>
+<div id="saida" class="hide"><h3>dados.js pronto</h3><div class="bar"><button class="btn" id="baixa">BAIXAR dados.js</button><button class="btn sec" id="copia">COPIAR dados.js</button><button class="btn sec" id="json">EXPORTAR JSON</button><a class="btn sec" href="index.html">Abrir sistema</a></div>
+<p class="mu">Para publicar: substitua o dados.js no repositório do GitHub e faça o commit.</p></div>
+</main><script src="importador.js"></script></body></html>
