@@ -26,6 +26,7 @@ function dash(){const n=dados.length,sol=dados.reduce((a,r)=>a+totDocs(r),0),c=s
 const ent=dados.filter(r=>st(r)==="OK"),entD=ent.reduce((a,r)=>a+totDocs(r),0),venc=dados.filter(r=>{const s=st(r);if(s==="OK"||s==="CANCELADO"||!isD(r.dataEntrega))return false;const d=(new Date(r.dataEntrega)-new Date(hoje()))/864e5;return d>=0&&d<=7}).length;
 const it=[["Total de empresas",n,""],["Documentos solicitados",sol,""],["Entregues (registros OK)",ent.length,"ok"],["Pendentes",c("PENDENTE"),"am"],["Em andamento",c("EM ANDAMENTO"),""],["Atrasados / vencendo em 7 dias",c("ATRASADO")+" / "+venc,"vm"],["Conclusão (docs)",(sol?Math.round(entD/sol*100):0)+"%","ok"]];
 $("cards").innerHTML=it.map(([l,v,c])=>`<div class="card ${c}"><b>${v}</b><span>${l}</span></div>`).join("");
+$("concl").innerHTML=DOCS.map(([k,n])=>{const s=dados.reduce((x,r)=>x+dq(r,k).quantidade,0),c=dados.filter(r=>st(r)==="OK").reduce((x,r)=>x+dq(r,k).quantidade,0);return `<div class="card ok"><b>${c}</b><span>${n} concluído(s) de ${s} solicitado(s)</span></div>`}).join("");
 graf("g1","bar",DOCS.map(d=>d[1]),DOCS.map(([k])=>dados.reduce((a,r)=>a+dq(r,k).quantidade,0)),"Documentos solicitados");
 const rp={};dados.forEach(r=>{const k=r.responsavel||"—";rp[k]=(rp[k]||0)+1});graf("g2","bar",Object.keys(rp),Object.values(rp),"Registros por responsável");
 const ss={};dados.forEach(r=>{const k=st(r);ss[k]=(ss[k]||0)+1});graf("g3","doughnut",Object.keys(ss),Object.values(ss),"Status")}
