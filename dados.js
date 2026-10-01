@@ -4,7 +4,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "AL TOPOGRAFIA LTDA",
         "cnpjCpf": "30.095.506/0001-92",
-        "dataSolicitacao": "2026-08-24",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -41,8 +41,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-01",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -52,7 +52,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "BARION AGROPECUARIA COMERCIO VETERINARIO LTDA",
         "cnpjCpf": "42.912.514/0001-63",
-        "dataSolicitacao": "2026-08-24",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -89,8 +89,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-08-27",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -100,7 +100,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "CSN SINTER III - MONTO INDUSTRIAL LTDA",
         "cnpjCpf": "29.626.366/0001-52",
-        "dataSolicitacao": "2026-08-24",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": false,
             "quantidade": 0
@@ -137,10 +137,10 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-01",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
-        "responsavel": "G/ BRENDA",
+        "responsavel": "BRENDA",
         "observacao": ""
     },
     {
@@ -148,7 +148,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "G. S. A. CONSTRUCOES LTDA-ME",
         "cnpjCpf": "06.132.162/0001-60",
-        "dataSolicitacao": "2026-08-24",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -185,8 +185,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-01",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "GABRIEL",
         "observacao": ""
@@ -196,7 +196,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "SINALOC - L S DE OLIVEIRA ME",
         "cnpjCpf": "31.445.485/0001-50",
-        "dataSolicitacao": "2026-08-24",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -233,8 +233,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-01",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "GABRIEL",
         "observacao": ""
@@ -244,7 +244,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "SPEED CAR-CLASS PECAS E SERVICOS LTDA",
         "cnpjCpf": "17.909.356/0001-45",
-        "dataSolicitacao": "2026-08-28",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -281,8 +281,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-02",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "GABRIEL",
         "observacao": ""
@@ -292,7 +292,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "FRETADÃO TECNOLOGIA SA",
         "cnpjCpf": "24.672.366/0001-75",
-        "dataSolicitacao": "2026-08-30",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": false,
             "quantidade": 0
@@ -329,8 +329,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "2026-08-31",
-        "dataEntrega": "2026-09-24",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "GUSTAVO",
         "observacao": "DOSIMETRIA"
@@ -340,7 +340,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "OPT - ELETRONICOS E BATERIAS LIMITADA",
         "cnpjCpf": "12.127.723/0001-35",
-        "dataSolicitacao": "2026-08-31",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -377,8 +377,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-18",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "GABRIEL",
         "observacao": ""
@@ -388,7 +388,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "KOMA' KI - MARCELO CARVALHO BESSA RESTAURANTE",
         "cnpjCpf": "07.279.255/0001-84",
-        "dataSolicitacao": "2026-09-02",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -425,8 +425,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-02",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -436,7 +436,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "MHM ASSESSORIA CONTABIL S/S",
         "cnpjCpf": "59.279.653/0001-02",
-        "dataSolicitacao": "2026-09-03",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -473,8 +473,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-03",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -484,7 +484,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "MHMM SERVICOS CONTABEIS S/S",
         "cnpjCpf": "15.634.999/0001-06",
-        "dataSolicitacao": "2026-09-03",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": false,
             "quantidade": 0
@@ -521,8 +521,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-03",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -532,7 +532,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "TOP QUALITY SOLUCOES GRAFICAS LTDA",
         "cnpjCpf": "12.795.433/0001-60",
-        "dataSolicitacao": "2026-09-04",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": false,
             "quantidade": 0
@@ -569,8 +569,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "APENAS ASSINATURA",
-        "dataEntrega": "2026-09-04",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": "NÃO ELABORAMOS, APENAS FOI ASSINADO PELA BRENDA"
@@ -580,7 +580,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "RESIDENCIAL SENIOR IPIRANGA LTD",
         "cnpjCpf": "63.188.538/0001-91",
-        "dataSolicitacao": "2026-09-09",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -617,8 +617,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-09",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -628,7 +628,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "SIT-SISTEMA DE ISOLAMENTO TERMICO E ACUSTICO LTDA",
         "cnpjCpf": "14.275.378/0001-02",
-        "dataSolicitacao": "2026-09-10",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -665,8 +665,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-10",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -676,7 +676,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "BARONESA PET SHOP - COMERCIO E SER. PARA ANIMAIS LTDA",
         "cnpjCpf": "45.370.830/0001-49",
-        "dataSolicitacao": "2026-09-11",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -713,8 +713,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-11",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -724,7 +724,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "NUCTECH DO BRASIL LTD - FILIAL",
         "cnpjCpf": "19.892.624/0002-70",
-        "dataSolicitacao": "2026-09-15",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -761,8 +761,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-15",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -772,7 +772,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "NUCTECH DO BRASIL LTDA - MATRIZ",
         "cnpjCpf": "19.892.624/0001-99",
-        "dataSolicitacao": "2026-09-15",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -809,8 +809,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-15",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -820,7 +820,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "POSTO SESSENTA LTDA",
         "cnpjCpf": "08.367.816/0001-60",
-        "dataSolicitacao": "2026-09-16",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -857,8 +857,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-17",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -868,7 +868,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "GLOBAL SERVICE ENGENHARIA LTDA",
         "cnpjCpf": "17.517.950/0001-90",
-        "dataSolicitacao": "2026-09-17",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": false,
             "quantidade": 0
@@ -905,8 +905,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-18",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -916,7 +916,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "KINSHIP ENGENHARIA LTDA",
         "cnpjCpf": "54.193.120/0001-81",
-        "dataSolicitacao": "2026-09-17",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": false,
             "quantidade": 0
@@ -953,8 +953,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-18",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -964,7 +964,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "AZUL TRANSPORTES E TURISMO LTDA - AZUL COCA COLA",
         "cnpjCpf": "10.764.533/0001-01",
-        "dataSolicitacao": "2026-09-18",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1001,8 +1001,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-18",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -1012,7 +1012,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "CONDOMINIO EDIFICIO SAINT MORITZ",
         "cnpjCpf": "00.093.762/0001-80",
-        "dataSolicitacao": "2026-09-19",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1049,8 +1049,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "2026-09-22",
-        "dataEntrega": "2026-09-29",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "RAFAEL",
         "observacao": ""
@@ -1060,7 +1060,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "AZUL MOB - ATERRO ECOURBS",
         "cnpjCpf": "",
-        "dataSolicitacao": "2026-09-21",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1097,7 +1097,7 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
+        "dataVisita": "",
         "dataEntrega": "",
         "status": "OK",
         "responsavel": "KETLYN",
@@ -1108,7 +1108,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "GLOBAL SERVICE - EPR LITORAL PIONEIRO S.A",
         "cnpjCpf": "17.517.950/0001-90",
-        "dataSolicitacao": "2026-09-21",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": false,
             "quantidade": 0
@@ -1145,8 +1145,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-21",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -1156,7 +1156,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "MARIA DE FATIMA - N.M. MONTAGENS E INSTALAÇÕES",
         "cnpjCpf": "14.916.038/0001-13",
-        "dataSolicitacao": "2026-09-21",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1193,8 +1193,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-22",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -1204,7 +1204,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "MONTO RJ",
         "cnpjCpf": "",
-        "dataSolicitacao": "2026-09-21",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": false,
             "quantidade": 0
@@ -1241,7 +1241,7 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
+        "dataVisita": "",
         "dataEntrega": "",
         "status": "OK",
         "responsavel": "KETLYN",
@@ -1252,7 +1252,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "D&W ENGENHARIA E REFORMAS LTDA",
         "cnpjCpf": "55.078.700/0001-90",
-        "dataSolicitacao": "2026-09-23",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1289,10 +1289,10 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-23",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
-        "responsavel": "KETLEN",
+        "responsavel": "KETLYN",
         "observacao": ""
     },
     {
@@ -1300,7 +1300,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "GLOBAL SERVICE - AGC VIDROS DO BRASIL LTDA",
         "cnpjCpf": "17.517.950/0001-90",
-        "dataSolicitacao": "2026-09-23",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": false,
             "quantidade": 0
@@ -1337,8 +1337,8 @@ const documentos = [
             "solicitado": true,
             "quantidade": 1
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-23",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -1348,7 +1348,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "BOX 54 COMERCIO E PRESTACAO DE SERVICOS LTDA",
         "cnpjCpf": "19.553.372/0001-73",
-        "dataSolicitacao": "2026-09-17",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1385,8 +1385,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-30",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "KETLYN",
         "observacao": ""
@@ -1396,7 +1396,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "SYSTEMAC MONTAGENS E PRESTACAO DE SERVICOS LTDA",
         "cnpjCpf": "03.991.124/0001-74",
-        "dataSolicitacao": "2026-09-17",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1433,8 +1433,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-30",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "KETLYN",
         "observacao": ""
@@ -1444,7 +1444,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "SYSTEMAC MONTAGENS E PRESTACAO DE SERVICOS LTDA",
         "cnpjCpf": "15.335.737/0001-32",
-        "dataSolicitacao": "2026-09-17",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1481,8 +1481,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-30",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "KETLYN",
         "observacao": ""
@@ -1492,7 +1492,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "SYSTEMAC TECNOLOGIAS CONSTRUTIVAS LTDA",
         "cnpjCpf": "65.732.764/0001-17",
-        "dataSolicitacao": "2026-09-17",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1529,8 +1529,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-30",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "KETLYN",
         "observacao": ""
@@ -1540,7 +1540,7 @@ const documentos = [
         "medicina": "REAL",
         "empresa": "FLSMIDTH AIRTECH BRASIL LTDA",
         "cnpjCpf": "61.771.061/0001-47",
-        "dataSolicitacao": "2026-09-25",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1577,8 +1577,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-28",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "BRENDA",
         "observacao": ""
@@ -1587,8 +1587,8 @@ const documentos = [
         "id": 34,
         "medicina": "REAL",
         "empresa": "FRETADÃO TECNOLOGIA S.A. - JD INDAIATUBA",
-        "cnpjCpf": "",
-        "dataSolicitacao": "2026-09-25",
+        "cnpjCpf": "24.672.366/0001-75",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1625,8 +1625,8 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-30",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "KETLYN",
         "observacao": ""
@@ -1635,8 +1635,8 @@ const documentos = [
         "id": 35,
         "medicina": "REAL",
         "empresa": "FRETADÃO TECNOLOGIA S.A. - JD CAMPINAS",
-        "cnpjCpf": "",
-        "dataSolicitacao": "2026-09-25",
+        "cnpjCpf": "24.672.366/0001-75",
+        "dataSolicitacao": "",
         "pgr": {
             "solicitado": true,
             "quantidade": 1
@@ -1673,10 +1673,298 @@ const documentos = [
             "solicitado": false,
             "quantidade": 0
         },
-        "dataVisita": "EMISSÃO",
-        "dataEntrega": "2026-09-30",
+        "dataVisita": "",
+        "dataEntrega": "",
         "status": "OK",
         "responsavel": "KETLYN",
+        "observacao": ""
+    },
+    {
+        "id": 36,
+        "medicina": "REAL",
+        "empresa": "FRETADÃO TECNOLOGIA S.A. - JOHN DEERE BANCO",
+        "cnpjCpf": "24.672.366/0001-76",
+        "dataSolicitacao": "",
+        "pgr": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "ltcat": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "pcmso": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "formsPsico": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aep": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aet": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "li": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "lp": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "medicoes": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "dataVisita": "",
+        "dataEntrega": "",
+        "status": "OK",
+        "responsavel": "KETLYN",
+        "observacao": ""
+    },
+    {
+        "id": 37,
+        "medicina": "REAL",
+        "empresa": "FRETADÃO TECNOLOGIA S.A. - JOHN DEERE REGIONAL",
+        "cnpjCpf": "24.672.366/0001-77",
+        "dataSolicitacao": "",
+        "pgr": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "ltcat": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "pcmso": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "formsPsico": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aep": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aet": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "li": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "lp": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "medicoes": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "dataVisita": "",
+        "dataEntrega": "",
+        "status": "OK",
+        "responsavel": "GUSTAVO",
+        "observacao": ""
+    },
+    {
+        "id": 38,
+        "medicina": "REAL",
+        "empresa": "FRETADÃO TECNOLOGIA S.A. - JOHN DEERE ESCAVADEIRA",
+        "cnpjCpf": "24.672.366/0001-78",
+        "dataSolicitacao": "",
+        "pgr": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "ltcat": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "pcmso": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "formsPsico": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aep": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aet": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "li": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "lp": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "medicoes": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "dataVisita": "",
+        "dataEntrega": "",
+        "status": "OK",
+        "responsavel": "GUSTAVO",
+        "observacao": ""
+    },
+    {
+        "id": 39,
+        "medicina": "REAL",
+        "empresa": "FRETADÃO TECNOLOGIA S.A. - JOHN DEERE CENTRO DE PESQUISA",
+        "cnpjCpf": "24.672.366/0001-79",
+        "dataSolicitacao": "",
+        "pgr": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "ltcat": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "pcmso": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "formsPsico": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aep": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aet": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "li": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "lp": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "medicoes": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "dataVisita": "",
+        "dataEntrega": "",
+        "status": "OK",
+        "responsavel": "GUSTAVO",
+        "observacao": ""
+    },
+    {
+        "id": 40,
+        "medicina": "REAL",
+        "empresa": "FRETADÃO TECNOLOGIA S.A. - JOHN DEERE CONSTRUÇÃO",
+        "cnpjCpf": "24.672.366/0001-80",
+        "dataSolicitacao": "",
+        "pgr": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "ltcat": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "pcmso": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "formsPsico": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aep": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aet": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "li": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "lp": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "medicoes": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "dataVisita": "",
+        "dataEntrega": "",
+        "status": "OK",
+        "responsavel": "GUSTAVO",
+        "observacao": ""
+    },
+    {
+        "id": 41,
+        "medicina": "REAL",
+        "empresa": "FRETADÃO TECNOLOGIA S.A. - JOHN DEERE FLORESTAL",
+        "cnpjCpf": "24.672.366/0001-81",
+        "dataSolicitacao": "",
+        "pgr": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "ltcat": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "pcmso": {
+            "solicitado": true,
+            "quantidade": 1
+        },
+        "formsPsico": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aep": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "aet": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "li": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "lp": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "medicoes": {
+            "solicitado": false,
+            "quantidade": 0
+        },
+        "dataVisita": "",
+        "dataEntrega": "",
+        "status": "OK",
+        "responsavel": "GUSTAVO",
         "observacao": ""
     }
 ];
