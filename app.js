@@ -1,4 +1,4 @@
-const DOCS=[["pgr","PGR"],["ltcat","LTCAT"],["pcmso","PCMSO"],["formsPsico","NR1. PSICO"],["aep","AEP"],["aet","AET"],["li","LI"],["lp","LP"],["medicoes","MEDIÇÕES"]];
+const DOCS=[["pgr","PGR"],["ltcat","LTCAT"],["pcmso","PCMSO"],["formsPsico","FORMS. PSICO"],["aep","AEP"],["aet","AET"],["li","LI"],["lp","LP"],["medicoes","MEDIÇÕES"]];
 const LS="rm_documentos",$=id=>document.getElementById(id);
 let dados=null;try{const s=localStorage.getItem(LS);if(s)dados=JSON.parse(s)}catch(e){}
 const local=!!dados;if(!dados)dados=JSON.parse(JSON.stringify(typeof documentos!=="undefined"?documentos:[]));
@@ -27,6 +27,11 @@ const ent=dados.filter(r=>st(r)==="OK"),entD=ent.reduce((a,r)=>a+totDocs(r),0),v
 const it=[["Total de empresas",n,""],["Documentos solicitados",sol,""],["Entregues (registros OK)",ent.length,"ok"],["Pendentes",c("PENDENTE"),"am"],["Em andamento",c("EM ANDAMENTO"),""],["Atrasados / vencendo em 7 dias",c("ATRASADO")+" / "+venc,"vm"],["Conclusão (docs)",(sol?Math.round(entD/sol*100):0)+"%","ok"]];
 $("cards").innerHTML=it.map(([l,v,c])=>`<div class="card ${c}"><b>${v}</b><span>${l}</span></div>`).join("");
 $("concl").innerHTML=DOCS.map(([k,n])=>{const s=dados.reduce((x,r)=>x+dq(r,k).quantidade,0),c=dados.filter(r=>st(r)==="OK").reduce((x,r)=>x+dq(r,k).quantidade,0);return `<div class="card ok"><b>${c}</b><span>${n} concluído(s) de ${s} solicitado(s)</span></div>`}).join("");
+const dts=k=>dados.map(r=>r[k]).filter(isD).sort(),ds=dts("dataSolicitacao"),de=dts("dataEntrega"),pz=dados.filter(r=>isD(r.dataSolicitacao)&&isD(r.dataEntrega)&&r.dataEntrega>=r.dataSolicitacao).map(r=>(new Date(r.dataEntrega)-new Date(r.dataSolicitacao))/864e5);
+const dc=[["Primeira solicitação",fmt(ds[0])],["Última solicitação",fmt(ds[ds.length-1])],["Última entrega",fmt(de[de.length-1])],["Prazo médio (dias)",pz.length?(pz.reduce((x,y)=>x+y,0)/pz.length).toFixed(1).replace(".",","):"—"],["Sem data de entrega",dados.filter(r=>!isD(r.dataEntrega)).length]];
+$("datas").innerHTML=dc.map(([l,v])=>`<div class="card"><b style="font-size:20px">${v}</b><span>${l}</span></div>`).join("");
+const mm={};ds.forEach(d=>{const m=d.slice(0,7);(mm[m]=mm[m]||[0,0])[0]++});de.forEach(d=>{const m=d.slice(0,7);(mm[m]=mm[m]||[0,0])[1]++});const ms=Object.keys(mm).sort();
+if(ch.g4)ch.g4.destroy();if(typeof Chart!=="undefined")ch.g4=new Chart($("g4"),{type:"bar",data:{labels:ms.map(m=>m.slice(5)+"/"+m.slice(0,4)),datasets:[{label:"Solicitações",data:ms.map(m=>mm[m][0]),backgroundColor:"#0b4f8a"},{label:"Entregas",data:ms.map(m=>mm[m][1]),backgroundColor:"#1e8e4e"}]},options:{maintainAspectRatio:false,plugins:{title:{display:true,text:"Solicitações e entregas por mês"}}}});
 graf("g1","bar",DOCS.map(d=>d[1]),DOCS.map(([k])=>dados.reduce((a,r)=>a+dq(r,k).quantidade,0)),"Documentos solicitados");
 const rp={};dados.forEach(r=>{const k=r.responsavel||"—";rp[k]=(rp[k]||0)+1});graf("g2","bar",Object.keys(rp),Object.values(rp),"Registros por responsável");
 const ss={};dados.forEach(r=>{const k=st(r);ss[k]=(ss[k]||0)+1});graf("g3","doughnut",Object.keys(ss),Object.values(ss),"Status")}
@@ -74,3 +79,20 @@ $("limpar").onclick=()=>{["busca","fSt","fResp","fDoc","fDe","fAte"].forEach(i=>
 $("novo").onclick=()=>form(null);$("fC").onclick=()=>$("dlgF").close();
 document.querySelectorAll("nav a[data-v]").forEach(a=>a.onclick=e=>{e.preventDefault();["home","pend","rel","cfg"].forEach(v=>$("v-"+v).classList.toggle("hide",v!==a.dataset.v));document.querySelectorAll("nav a").forEach(x=>x.classList.remove("on"));a.classList.add("on");if(a.dataset.go)$(a.dataset.go).scrollIntoView({behavior:"smooth"});else scrollTo(0,0)});
 aviso();render();
+
+const GH="rm_gh",ghI=["ghO","ghR","ghB","ghP"];
+(()=>{let c={};try{c=JSON.parse(localStorage.getItem(GH)||"{}")}catch(e){}ghI.forEach(i=>$(i).value=c[i]||(i==="ghB"?"main":i==="ghP"?"dados.js":""));$("ghT").value=sessionStorage.getItem("rm_tk")||""})();
+function ghMsg(t,c){$("ghMsg").innerHTML=`<div class="msg ${c}">${esc(t)}</div>`}
+$("ghGo").onclick=async()=>{const v=i=>$(i).value.trim(),o=v("ghO"),r=v("ghR"),b=v("ghB")||"main",p=v("ghP")||"dados.js",t=v("ghT");
+if(!o||!r||!t){ghMsg("✕ Informe usuário, repositório e token.","er");return}
+if(!confirm(`Isto vai substituir ${p} no repositório ${o}/${r} (branch ${b}) com os dados atuais (${dados.length} registros). Continuar?`))return;
+localStorage.setItem(GH,JSON.stringify(Object.fromEntries(ghI.map(i=>[i,v(i)]))));sessionStorage.setItem("rm_tk",t);
+const url=`https://api.github.com/repos/${encodeURIComponent(o)}/${encodeURIComponent(r)}/contents/${p.split("/").map(encodeURIComponent).join("/")}`,h={Authorization:"Bearer "+t,Accept:"application/vnd.github+json"};
+ghMsg("Enviando…","wa");
+try{let sha;const g=await fetch(`${url}?ref=${encodeURIComponent(b)}`,{headers:h});
+if(g.ok)sha=(await g.json()).sha;else if(g.status!==404)throw new Error(g.status===401||g.status===403?"Token inválido ou sem permissão (Contents: Read and write).":"Falha ao consultar o arquivo (HTTP "+g.status+").");
+const body={message:`Atualiza ${p} (${dados.length} registros) - ${new Date().toLocaleString("pt-BR")}`,content:btoa(unescape(encodeURIComponent(gerarJs()))),branch:b};if(sha)body.sha=sha;
+const u=await fetch(url,{method:"PUT",headers:{...h,"Content-Type":"application/json"},body:JSON.stringify(body)});
+if(!u.ok)throw new Error((await u.json().catch(()=>({}))).message||"HTTP "+u.status);
+ghMsg("✓ dados.js enviado ao GitHub. O GitHub Pages deve atualizar o site em alguns minutos.","ok");toast("✓ Enviado ao GitHub.")}
+catch(e){ghMsg("✕ Não foi possível enviar: "+e.message,"er")}};

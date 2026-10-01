@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Controle de Documentos — Real Consultoria</title><link rel="stylesheet" href="style.css">
+<title>Controle de Documentos — Real Medicina</title><link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script></head><body>
-<header><h1>CONTROLE DE DOCUMENTOS — REAL SAÚDE E SEGURANÇA</h1><small>Saúde e Segurança do Trabalho</small></header>
+<header><h1>CONTROLE DE DOCUMENTOS — REAL MEDICINA</h1><small>Medicina e Segurança do Trabalho</small></header>
 <nav>
 <a href="#" data-v="home" class="on">Dashboard</a><a href="#" data-v="home" data-go="tabela">Documentos</a>
 <button id="novo">Novo Registro</button><a href="importador.html">Importar Planilha</a>
@@ -11,7 +11,8 @@
 <section id="v-home">
 <div class="cards" id="cards"></div>
 <h3 style="margin:0 0 8px">Documentos concluídos</h3><div class="cards" id="concl"></div>
-<div class="graf"><div class="card"><canvas id="g1"></canvas></div><div class="card"><canvas id="g2"></canvas></div><div class="card"><canvas id="g3"></canvas></div></div>
+<h3 style="margin:0 0 8px">Datas</h3><div class="cards" id="datas"></div>
+<div class="graf"><div class="card"><canvas id="g1"></canvas></div><div class="card"><canvas id="g2"></canvas></div><div class="card"><canvas id="g3"></canvas></div><div class="card"><canvas id="g4"></canvas></div></div>
 <div id="tabela"><div class="bar">
 <input id="busca" type="search" placeholder="Pesquisar empresa, CNPJ/CPF ou responsável">
 <select id="fSt"><option value="">Status: todos</option><option>OK</option><option>PENDENTE</option><option>EM ANDAMENTO</option><option>ATRASADO</option></select>
@@ -24,6 +25,10 @@
 <section id="v-rel" class="hide"><h3>Relatórios</h3><div class="bar"><select id="relT"><option value="empresa">Por empresa</option><option value="responsavel">Por responsável</option><option value="documento">Por documento</option><option value="status">Por status</option><option value="pendencias">Pendências</option></select><button class="btn" id="relCsv">Exportar CSV</button></div><div class="tw"><table><thead id="relH"></thead><tbody id="relB"></tbody></table></div></section>
 <section id="v-cfg" class="hide"><h3>Backup e configurações</h3>
 <div class="bar"><button class="btn" id="bJson">Exportar JSON</button><button class="btn" id="bCsv">Exportar CSV</button><button class="btn" id="bJs">Baixar dados.js</button><button class="btn sec" id="bDesc">Descartar alterações locais</button></div>
+<h3>Enviar dados.js para o GitHub</h3>
+<p class="mu">Envia o <b>dados.js</b> atual direto do navegador para o seu repositório (API do GitHub). Use um token <i>fine-grained</i> restrito a este repositório, com permissão <b>Contents: Read and write</b>. O token fica só nesta aba (sessionStorage) e nunca é gravado no arquivo.</p>
+<div class="g" style="max-width:720px"><label>Usuário/organização<input id="ghO" placeholder="meu-usuario"></label><label>Repositório<input id="ghR" placeholder="controle-real-medicina"></label><label>Branch<input id="ghB"></label><label>Caminho do arquivo<input id="ghP"></label><label class="w">Token de acesso<input id="ghT" type="password" autocomplete="off" placeholder="github_pat_..."></label></div>
+<div class="bar" style="margin-top:10px"><button class="btn" id="ghGo">Enviar dados.js para o GitHub</button></div><div id="ghMsg"></div>
 <p class="mu">Este sistema roda no GitHub Pages, que é estático: alterações feitas no navegador ficam salvas só neste navegador. Para publicar, baixe o <b>dados.js</b> e substitua o arquivo no repositório (commit).</p></section>
 </main>
 <dialog id="dlgF"><form id="form"><h2 id="fT">Novo registro</h2><div class="g" id="fG"></div>
