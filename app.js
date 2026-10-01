@@ -1,4 +1,4 @@
-const DOCS=[["pgr","PGR"],["ltcat","LTCAT"],["pcmso","PCMSO"],["formsPsico","FORMS. PSICO"],["aep","AEP"],["aet","AET"],["li","LI"],["lp","LP"],["medicoes","MEDIÇÕES"]];
+const DOCS=[["pgr","PGR"],["ltcat","LTCAT"],["pcmso","PCMSO"],["formsPsico","NR1. PSICO"],["aep","AEP"],["aet","AET"],["li","LI"],["lp","LP"],["medicoes","MEDIÇÕES"]];
 const LS="rm_documentos",$=id=>document.getElementById(id);
 let dados=null;try{const s=localStorage.getItem(LS);if(s)dados=JSON.parse(s)}catch(e){}
 const local=!!dados;if(!dados)dados=JSON.parse(JSON.stringify(typeof documentos!=="undefined"?documentos:[]));
